@@ -1,0 +1,12 @@
+type Inquiry = 
+ record {
+   createdAt: int;
+   id: nat;
+   name: text;
+   phone: text;
+   serviceNeeded: text;
+ };
+service : {
+  getInquiries: () -> (vec Inquiry) query;
+  submitInquiry: (name: text, phone: text, serviceNeeded: text) -> ();
+}
