@@ -1,20 +1,52 @@
-node_modules
-.next
+# Source control
 .git
 .gitignore
+.gitattributes
+
+# Documentation
 README.md
+CHANGELOG.md
+LICENSE
+
+# Dependencies (will be reinstalled)
+node_modules/
+pnpm-lock.yaml
+
+# Build outputs
+.next/
+dist/
+build/
+
+# Environment files
 .env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*.local
+
+# Logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-.vercel
-*.log
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
 .DS_Store
-.vscode
-.idea
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Development tools
+.vercel/
+vercel.json
+
+# Testing
+.coverage/
+coverage/
