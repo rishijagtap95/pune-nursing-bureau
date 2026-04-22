@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Use the official Node.js 20 Alpine image as the base image
 FROM node:20-alpine AS base
 
@@ -44,3 +45,25 @@ EXPOSE 3000
 
 # Start the application
 CMD ["pnpm", "run", "start"]
+=======
+# ---- Build Stage ----
+FROM node:18-alpine AS builder
+
+WORKDIR /app
+
+RUN npm install -g pnpm
+
+COPY . .
+RUN pnpm install
+RUN pnpm build
+
+# ---- Production (Nginx) ----
+FROM nginx:alpine
+
+# Copy built frontend
+COPY --from=builder /app/src/frontend/dist /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
+>>>>>>> da052a92cdae1ab9bff45dba4f9b7697e4ebb2a2
