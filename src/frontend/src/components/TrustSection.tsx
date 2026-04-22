@@ -109,7 +109,7 @@ export default function TrustSection() {
                 <div className="font-display text-2xl font-bold">
                   {stat.value}
                 </div>
-                <div className="text-primary-foreground/70 text-xs mt-0.5 font-medium">
+                <div className="text-white/70 text-xs mt-0.5 font-medium">
                   {stat.label}
                 </div>
               </div>

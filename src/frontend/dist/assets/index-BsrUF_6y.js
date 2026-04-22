@@ -36108,7 +36108,7 @@ function Contact() {
                   type: "tel",
                   value: form.phone,
                   onChange: (e) => setForm({ ...form, phone: e.target.value }),
-                  placeholder: "+91 98765 43210",
+                  placeholder: "+91 80555 56535",
                   required: true,
                   className: "w-full px-4 py-2.5 rounded-lg border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-accent transition-smooth placeholder:text-muted-foreground"
                 }
@@ -36171,7 +36171,7 @@ function Contact() {
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-start gap-3", children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { className: "w-5 h-5 mt-0.5 flex-shrink-0 text-accent" }),
                   /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
-                    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-sm font-medium text-foreground", children: "+91 98765 43210" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-sm font-medium text-foreground", children: "+91 80555 56535" }),
                     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-muted-foreground", children: "Mon–Sun · 7 AM–10 PM" })
                   ] })
                 ] }),
@@ -36246,7 +36246,7 @@ function Footer() {
         /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-primary-foreground/60 text-sm leading-relaxed mb-4", children: "Trusted Home Healthcare in Pune Since 2019. Verified nurses and caretakers for your loved ones." }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 text-primary-foreground/50 text-xs", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { className: "w-3.5 h-3.5" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "+91 98765 43210" })
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "+91 80555 56535" })
         ] })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
@@ -36274,7 +36274,7 @@ function Footer() {
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-center gap-2 text-primary-foreground/60 text-sm", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { className: "w-4 h-4 flex-shrink-0 text-accent" }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "+91 98765 43210" })
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "+91 80555 56535" })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("li", { className: "flex items-center gap-2 text-primary-foreground/60 text-sm", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx(Mail, { className: "w-4 h-4 flex-shrink-0 text-accent" }),
@@ -36963,7 +36963,7 @@ function WhatsAppButton() {
     "a",
     {
       "data-ocid": "whatsapp-cta",
-      href: "https://wa.me/919876543210",
+      href: "https://wa.me/918055556535",
       target: "_blank",
       rel: "noopener noreferrer",
       className: "fixed bottom-6 right-6 z-50 flex items-center gap-0 overflow-hidden rounded-full shadow-elevated transition-all duration-300 ease-in-out bg-[#25D366] px-3.5 py-3.5 hover:gap-2 hover:px-5 group",

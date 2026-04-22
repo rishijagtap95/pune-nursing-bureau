@@ -46,10 +46,10 @@ export default function Navbar() {
               />
             </div>
             <div className="text-left min-w-0">
-              <span className="text-primary-foreground font-display font-semibold text-lg leading-tight block">
+              <span className="text-white font-display font-semibold text-lg leading-tight block">
                 PuneNurse Bureau
               </span>
-              <span className="text-primary-foreground/60 text-xs leading-tight block tracking-wide">
+              <span className="text-white/70 text-xs leading-tight block tracking-wide">
                 Home Healthcare Pune
               </span>
             </div>
@@ -62,7 +62,7 @@ export default function Navbar() {
                 type="button"
                 key={link.href}
                 onClick={() => scrollTo(link.href)}
-                className="text-primary-foreground/80 hover:text-primary-foreground text-sm font-medium transition-smooth"
+                className="text-white/85 hover:text-white text-sm font-medium transition-smooth"
               >
                 {link.label}
               </button>
@@ -80,7 +80,7 @@ export default function Navbar() {
           {/* Mobile menu toggle */}
           <button
             type="button"
-            className="md:hidden text-primary-foreground p-2"
+            className="md:hidden text-white p-2"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? "Close menu" : "Open menu"}
           >
@@ -95,7 +95,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden border-t border-primary-foreground/10 bg-primary">
+        <div className="md:hidden border-t border-white/10 bg-primary">
           <div className="px-4 py-3 space-y-1">
             {navLinks.map((link) => (
               <button
@@ -105,7 +105,7 @@ export default function Navbar() {
                   scrollTo(link.href);
                   setMenuOpen(false);
                 }}
-                className="block w-full text-left py-2.5 text-primary-foreground/80 hover:text-primary-foreground text-sm font-medium transition-smooth"
+                className="block w-full text-left py-2.5 text-white/85 hover:text-white text-sm font-medium transition-smooth"
               >
                 {link.label}
               </button>

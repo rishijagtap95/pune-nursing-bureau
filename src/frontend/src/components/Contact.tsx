@@ -143,7 +143,7 @@ export default function Contact() {
                     onChange={(e) =>
                       setForm({ ...form, phone: e.target.value })
                     }
-                    placeholder="+91 98765 43210"
+                    placeholder="+91 80555 56535"
                     required
                     className="w-full px-4 py-2.5 rounded-lg border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-accent transition-smooth placeholder:text-muted-foreground"
                   />
@@ -205,7 +205,7 @@ export default function Contact() {
                   <Phone className="w-5 h-5 mt-0.5 flex-shrink-0 text-accent" />
                   <div>
                     <div className="text-sm font-medium text-foreground">
-                      +91 98765 43210
+                      +91 80555 56535
                     </div>
                     <div className="text-xs text-muted-foreground">
                       Mon–Sun · 7 AM–10 PM

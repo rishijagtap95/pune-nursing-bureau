@@ -34,7 +34,7 @@ export default function Hero() {
 
           {/* Headline */}
           <motion.h1
-            className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-5"
+            className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -46,7 +46,7 @@ export default function Hero() {
 
           {/* Subheadline */}
           <motion.p
-            className="text-primary-foreground/75 text-lg leading-relaxed mb-9 max-w-xl"
+            className="text-white/85 text-lg leading-relaxed mb-9 max-w-xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -76,7 +76,7 @@ export default function Hero() {
               type="button"
               data-ocid="hero-cta-secondary"
               onClick={() => scrollTo("#services")}
-              className="flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-base border border-primary-foreground/40 text-primary-foreground transition-smooth hover:bg-primary-foreground/10"
+              className="flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-base border border-white/30 text-white transition-smooth hover:bg-white/10"
             >
               Our Services
             </button>
@@ -93,7 +93,7 @@ export default function Hero() {
               (item) => (
                 <div
                   key={item}
-                  className="flex items-center gap-1.5 text-primary-foreground/60 text-sm"
+                  className="flex items-center gap-1.5 text-white/75 text-sm"
                 >
                   <CheckCircle className="w-4 h-4 flex-shrink-0 text-accent" />
                   {item}

@@ -40,23 +40,23 @@ export default function Footer() {
                   fill="currentColor"
                 />
               </div>
-              <span className="text-primary-foreground font-display font-semibold text-lg">
+              <span className="text-white font-display font-semibold text-lg">
                 PuneNurse Bureau
               </span>
             </div>
-            <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">
+            <p className="text-white/85 text-sm leading-relaxed mb-4">
               Trusted Home Healthcare in Pune Since 2019. Verified nurses and
               caretakers for your loved ones.
             </p>
-            <div className="flex items-center gap-2 text-primary-foreground/50 text-xs">
+            <div className="flex items-center gap-2 text-white/70 text-xs">
               <Phone className="w-3.5 h-3.5" />
-              <span>+91 98765 43210</span>
+              <span>+91 80555 56535</span>
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="text-primary-foreground font-semibold text-sm mb-4 uppercase tracking-wider">
+            <h4 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">
               Our Services
             </h4>
             <ul className="space-y-2.5">
@@ -65,7 +65,7 @@ export default function Footer() {
                   <button
                     type="button"
                     onClick={() => scrollTo("#services")}
-                    className="text-primary-foreground/60 hover:text-primary-foreground text-sm transition-smooth"
+                    className="text-white/80 hover:text-white text-sm transition-smooth"
                   >
                     {s}
                   </button>
@@ -76,13 +76,13 @@ export default function Footer() {
 
           {/* Areas served */}
           <div>
-            <h4 className="text-primary-foreground font-semibold text-sm mb-4 uppercase tracking-wider">
+            <h4 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">
               Areas Served
             </h4>
             <ul className="space-y-2.5">
               {areas.map((area) => (
                 <li key={area}>
-                  <span className="text-primary-foreground/60 text-sm">
+                  <span className="text-white/80 text-sm">
                     {area}
                   </span>
                 </li>
@@ -92,19 +92,19 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-primary-foreground font-semibold text-sm mb-4 uppercase tracking-wider">
+            <h4 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">
               Contact
             </h4>
             <ul className="space-y-3">
-              <li className="flex items-start gap-2 text-primary-foreground/60 text-sm">
+              <li className="flex items-start gap-2 text-white/85 text-sm">
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5 text-accent" />
                 <span>12 Yerwada Business Park, Pune – 411006</span>
               </li>
-              <li className="flex items-center gap-2 text-primary-foreground/60 text-sm">
+              <li className="flex items-center gap-2 text-white/85 text-sm">
                 <Phone className="w-4 h-4 flex-shrink-0 text-accent" />
-                <span>+91 98765 43210</span>
+                <span>+91 80555 56535</span>
               </li>
-              <li className="flex items-center gap-2 text-primary-foreground/60 text-sm">
+              <li className="flex items-center gap-2 text-white/85 text-sm">
                 <Mail className="w-4 h-4 flex-shrink-0 text-accent" />
                 <span>info@punenurse.in</span>
               </li>
@@ -120,19 +120,8 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-primary-foreground/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-primary-foreground/40 text-xs">
+        <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-center gap-3 text-white/60 text-xs">
           <span>© {year} PuneNurse Bureau. All rights reserved.</span>
-          <span>
-            Built with love using{" "}
-            <a
-              href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(window.location.hostname)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-primary-foreground/70 transition-smooth underline underline-offset-2"
-            >
-              caffeine.ai
-            </a>
-          </span>
         </div>
       </div>
     </footer>
